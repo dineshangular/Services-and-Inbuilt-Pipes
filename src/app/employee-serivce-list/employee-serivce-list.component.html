@@ -1,0 +1,21 @@
+<div class="container">
+  <h4>Employee Service list</h4>
+  <table class="table" border="1">
+    <thead class="thead-dark">
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Profession</th>
+      <th>Salary</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.name | uppercase}}</td>
+        <td>{{employee.age}}</td>
+        <td>{{employee.gender | titlecase}}</td>
+        <td>{{employee.profession}}</td>
+        <td>{{employee.salary | number}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
